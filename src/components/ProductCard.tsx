@@ -21,12 +21,23 @@ export default function ProductCard({ product }: { product: Product }) {
         />
       </Link>
       <div className="space-y-3 p-5">
-        <Link href={`/product/${product.slug}`} className="block text-lg font-semibold text-slate-900 hover:text-slate-700">
-          {product.name}
-        </Link>
-        <p className="text-sm text-slate-600">{product.shortDescription}</p>
-        <div className="flex items-center justify-between gap-4">
-          <p className="text-base font-semibold text-slate-900">{formatPrice(product.price)}</p>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">{product.fabric}</p>
+            <Link href={`/product/${product.slug}`} className="mt-1 block text-lg font-semibold text-slate-900 hover:text-slate-700">
+              {product.name}
+            </Link>
+          </div>
+          {product.badge ? <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">{product.badge}</span> : null}
+        </div>
+        <div className="flex items-center gap-2 text-sm text-slate-600">
+          <span className="text-amber-500">★</span>
+          <span className="font-semibold text-slate-900">{product.rating.toFixed(1)}</span>
+          <span>· {product.color}</span>
+        </div>
+        <p className="min-h-10 text-sm text-slate-600">{product.shortDescription}</p>
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-base font-semibold text-slate-900">{formatPrice(product.price)} <span className="text-xs font-normal text-slate-500">/ mét</span></p>
           <button
             type="button"
             onClick={() => addItem(product)}
@@ -35,6 +46,9 @@ export default function ProductCard({ product }: { product: Product }) {
             Thêm vào giỏ
           </button>
         </div>
+        <Link href={`/product/${product.slug}`} className="block text-center text-sm font-semibold text-slate-600 hover:text-slate-900">
+          Xem chi tiết →
+        </Link>
       </div>
     </article>
   );

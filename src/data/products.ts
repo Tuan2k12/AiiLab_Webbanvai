@@ -10,6 +10,8 @@ export type Product = {
   description: string;
   images: string[];
   stock: number;
+  rating: number;
+  badge?: 'Mới' | 'Bán chạy' | 'Giảm giá';
 };
 
 export const products: Product[] = [
@@ -24,8 +26,10 @@ export const products: Product[] = [
     shortDescription: 'Vải lanh mát, phù hợp may đầm, áo sơ mi mùa hè.',
     description:
       'Vải lanh cao cấp có độ bền tốt và dễ thấm hút mồ hôi. Độ dày vừa phải, cảm giác nhẹ nhàng, thích hợp cho quần áo công sở và dạo phố.',
-    images: ['/images/vai-lanh-xanh-nhat-1.jpg', '/images/vai-lanh-xanh-nhat-2.jpg'],
+    images: ['/images/vai-lanh-xanh-nhat.png'],
     stock: 20,
+    rating: 4.9,
+    badge: 'Bán chạy',
   },
   {
     id: 'p2',
@@ -38,8 +42,10 @@ export const products: Product[] = [
     shortDescription: 'Chất liệu mềm mịn, phù hợp may váy maxi và áo dài.',
     description:
       'Vải cát lê có mặt vải láng mịn, mang đến cảm giác nữ tính và sang trọng. Phù hợp với các sản phẩm may mặc cho sự kiện hoặc thời trang hàng ngày.',
-    images: ['/images/vai-cat-le-trang-kem-1.jpg', '/images/vai-cat-le-trang-kem-2.jpg'],
+    images: ['/images/vai-cat-le-trang-kem.png'],
     stock: 15,
+    rating: 4.8,
+    badge: 'Mới',
   },
   {
     id: 'p3',
@@ -52,8 +58,9 @@ export const products: Product[] = [
     shortDescription: 'Vải lanh in hoa nhỏ, phù hợp váy xòe và áo croptop.',
     description:
       'Họa tiết hoa nhỏ tinh tế, phù hợp phong cách nhẹ nhàng. Vải thoáng mát, dễ phối đồ và may thành trang phục mùa xuân hè.',
-    images: ['/images/vai-lanh-hoa-nho-1.jpg', '/images/vai-lanh-hoa-nho-2.jpg'],
+    images: ['/images/vai-lanh-hoa-nho.png'],
     stock: 18,
+    rating: 4.7,
   },
   {
     id: 'p4',
@@ -66,8 +73,9 @@ export const products: Product[] = [
     shortDescription: 'Vải lanh dự phòng, phong cách thanh lịch cho áo vest/áo sơ mi.',
     description:
       'Vải lanh đen sọc trắng cho vẻ mạnh mẽ, sang trọng. Dễ dàng may thành trang phục công sở hoặc thời trang dạo phố.',
-    images: ['/images/vai-lanh-den-soc-trang-1.jpg', '/images/vai-lanh-den-soc-trang-2.jpg'],
+    images: ['/images/vai-lanh-den-soc-trang.jpg'],
     stock: 12,
+    rating: 4.9,
   },
   {
     id: 'p5',
@@ -80,8 +88,10 @@ export const products: Product[] = [
     shortDescription: 'Vải lụa bóng mượt, thích hợp may áo dài và đầm dạ hội.',
     description:
       'Vải lụa cao cấp với độ rủ đẹp và ánh bóng nhẹ. Đem lại vẻ sang trọng, mềm mại cho trang phục sự kiện.',
-    images: ['/images/vai-lua-mau-hong-1.jpg', '/images/vai-lua-mau-hong-2.jpg'],
+    images: ['/images/vai-lua-mau-hong.png'],
     stock: 10,
+    rating: 5,
+    badge: 'Bán chạy',
   },
   {
     id: 'p6',
@@ -94,7 +104,9 @@ export const products: Product[] = [
     shortDescription: 'Vải họa tiết đen vàng sang trọng, phù hợp may đầm và áo khoác.',
     description:
       'Vải tơ tằm với họa tiết vàng nổi bật trên nền đen. Chất liệu mềm mại, thoải mái khi mặc và phù hợp nhiều dịp.',
-    images: ['/images/vai-den-hoa-van-vang-1.jpg', '/images/vai-den-hoa-van-vang-2.jpg'],
+    images: ['/images/vai-den-hoa-tiet-vang.png'],
     stock: 9,
+    rating: 4.8,
+    badge: 'Mới',
   },
 ];

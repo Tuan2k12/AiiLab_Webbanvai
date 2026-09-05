@@ -32,14 +32,14 @@ export default function HomePage() {
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="rounded-3xl border border-[#e8ded0] bg-white/75 p-8 shadow-sm">
           <h2 className="text-2xl font-semibold text-slate-900">Danh mục nổi bật</h2>
           <p className="mt-3 text-slate-600">
             Chọn vải theo chất liệu, màu sắc và phong cách. Tất cả đều sẵn sàng để may trang phục theo ý muốn của bạn.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {['Lanh', 'Lụa', 'Cát lê', 'Tơ tằm'].map((label) => (
-              <div key={label} className="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+              <div key={label} className="rounded-3xl border border-[#e8ded0] bg-[#F7F1E8] p-4">
                 <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Chất liệu</p>
                 <p className="mt-3 text-xl font-semibold text-slate-900">{label}</p>
               </div>
@@ -47,7 +47,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="rounded-3xl border border-[#e8ded0] bg-white/75 p-8 shadow-sm">
           <h2 className="text-2xl font-semibold text-slate-900">Khuyến mãi nổi bật</h2>
           <p className="mt-3 text-slate-600">Miễn phí tư vấn chọn vải và phối màu cho đơn hàng đầu tiên.</p>
           <div className="mt-8 space-y-5">
@@ -84,7 +84,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+      <section className="rounded-3xl border border-[#e8ded0] bg-white/75 p-8 shadow-sm">
         <div className="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between">
           <div>
             <p className="text-sm uppercase tracking-[0.22em] text-slate-500">Bảng giá tham khảo</p>

@@ -58,11 +58,11 @@ export default function ContactPage() {
         </form>
 
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Thông tin cửa hàng</p>
+          <p className="text-lg font-bold uppercase tracking-[0.16em] text-slate-900">Thông tin cửa hàng</p>
           <div className="mt-6 space-y-4 text-slate-600">
-            <p>Địa chỉ: 123 Đường Thời Trang, Quận 1, TP. Hồ Chí Minh</p>
-            <p>Email: lienhe@shopvaiaoa.com</p>
-            <p>Điện thoại: 0912 345 678</p>
+            <p><strong>Địa chỉ:</strong> 73/10 Hẻm 73 Đô Đốc Long, P. Phú Thọ Hoà, TP. Hồ Chí Minh</p>
+            <p><strong>Email:</strong> tot7sonliv1allison@gmail.com</p>
+            <p><strong>Điện thoại:</strong> 0934044889</p>
           </div>
         </div>
       </div>
