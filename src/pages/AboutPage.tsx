@@ -3,8 +3,11 @@ export default function AboutPage() {
     <div className="space-y-8">
       <div className="rounded-3xl border border-slate-200 bg-white p-10 shadow-sm">
         <h1 className="text-3xl font-semibold text-slate-900">Giới thiệu</h1>
-        <p className="mt-4 max-w-3xl text-slate-600">
-          Shop Vải Quần Áo cung cấp các loại vải thời trang dành cho may mặc, bao gồm lanh, lụa, cát lê, tơ tằm và nhiều chất liệu cao cấp khác. Chúng tôi hỗ trợ khách hàng chọn vải theo phong cách, màu sắc và nhu cầu sử dụng.
+        <p className="mt-4 max-w-4xl text-slate-600 leading-relaxed">
+          Chào mừng quý khách đến với <span className="font-semibold text-slate-900">Hồng Vân (HV)</span> — nơi khởi nguồn của những chất liệu thượng hạng và tôn vinh vẻ đẹp sang trọng qua từng thớ vải.
+        </p>
+        <p className="mt-4 max-w-4xl text-slate-600 leading-relaxed">
+          Trong thế giới thời trang cao cấp, một trang phục hoàn hảo không chỉ dừng lại ở đường kim mũi chỉ, mà cốt lõi nằm ở linh hồn của chất liệu. Tại Hồng Vân, chúng tôi tin rằng mỗi xấp vải mang trong mình một câu chuyện riêng — câu chuyện về sự tỉ mỉ, gu thẩm mỹ tinh tế và đẳng cấp không dành cho số đông.
         </p>
       </div>
 
